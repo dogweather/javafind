@@ -18,10 +18,8 @@ system. So, Find only calls the native GNU utilities when a regular
 expression is explicitly specified. In this case, it's still faster: about 2x
 faster than pure Java.
 
-<p>
-This class also adds the useful method <a href="#isSymLink">isSymLink </a> to
-the File class.
-<p>
+This class also adds the useful method [isSymLink](https://github.com/dogweather/javafind/blob/main/src/com/greenfabric/find/Find.java#L478-L492)
+to the File class.
 
 <code>Find</code>'s behavior can be configured like the GNU find(1) program;
 for example, to return only a certain file type, or to descend only to a
