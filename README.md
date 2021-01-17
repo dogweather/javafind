@@ -7,7 +7,6 @@ enhances <code>java.io.File</code>. The <code>File</code> class has a method
 named `list()` that returns all files in the represented directory.
 This `Find` class adds the methods `listRecursively()` and
 `listFilesRecursively()` that search subdirectories, too.
-<p>
 
 A cool feature of this class is that it will auto-detect if it's being used
 on a GNU system like FreeBSD or Linux, and if so will optimize file searches
@@ -21,12 +20,13 @@ faster than pure Java.
 This class also adds the useful method [isSymLink](https://github.com/dogweather/javafind/blob/main/src/com/greenfabric/find/Find.java#L478-L492)
 to the File class.
 
-Java-Find's behavior can be configured like [the GNU find(1)](https://leemendelowitz.github.io/blog/gnu-find.html)
-program; for example, to return only a certain file type, or to descend only to a
-certain maximum depth.
+Java-Find's behavior can be configured like
+[the GNU find(1)](https://leemendelowitz.github.io/blog/gnu-find.html)
+program; for example, to return only a certain file type, or to descend
+only to a certain maximum depth.
 
 
-<h2>Example of embedded usage</h2>
+## Example of embedded usage
 
 This code finds all html files in the given directory or sub-directory. Note
 that with the supplied regular expression, this will work whether the files
@@ -42,31 +42,39 @@ File[] files = myFind.listFilesRecursively();
 ```
 
 
-<h2>Command-line usage syntax</h2>
+## Command-line usage syntax
 
 ```
 java com.greenfabric.find.Find [Pathname [RegularExpression]]
 ```
 
-<h2>Example of Unix command-line usage</h2> (I set an alias to 'java com...')
+
+## Example of Unix command-line usage
+
+(On Windows, I set an alias to 'java com...')
 
 ```
 find /usr/local/java \.java$
 ```
 
-<h2>Debugging info</h2> You can see what JavaFind is doing behind the scenes
+
+## Debugging info
+
+You can see what JavaFind is doing behind the scenes
 by configuring either of these system properties:
+
 <ul>
-<li><b>javafind.debug: </b> If set to any value, some debug info is printed
+<li>`javafind.debug`: If set to any value, some debug info is printed
 to standard output, basically reporting on dynamic behavior (whether GNU
 optimization is being done, etc.).
-<li><b>javafind.allowoptimize: </b> Can be set to "on" or "off", or "regex",
+<li>`javafind.allowoptimize`: Can be set to "on" or "off", or "regex",
 performing the same function as the setOptimizeMode() method. As described
 above, "regex" is the default.
 </ul>
 
 
-<h2>Todo</h2>
+## Todo
+
 <ul>
 <li>Possibly adapt to use a Getopts or other cmd line argument package.
 <li>Change so that an invalid pattern exception is thrown when calling
@@ -84,7 +92,8 @@ that would be implemented with the String methods.
 </ul>
 
 
-<h2>Bugs</h2>
+## Bugs
+
 <ul>
 <li>On Windows 95, there may be a problem if the path is like
 <code>c:\</code>. The find seems to return no matches. It works OK for paths
