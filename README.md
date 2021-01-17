@@ -21,8 +21,8 @@ faster than pure Java.
 This class also adds the useful method [isSymLink](https://github.com/dogweather/javafind/blob/main/src/com/greenfabric/find/Find.java#L478-L492)
 to the File class.
 
-<code>Find</code>'s behavior can be configured like the GNU find(1) program;
-for example, to return only a certain file type, or to descend only to a
+Java-Find's behavior can be configured like [the GNU find(1)](https://leemendelowitz.github.io/blog/gnu-find.html)
+program; for example, to return only a certain file type, or to descend only to a
 certain maximum depth.
 
 
