@@ -1,11 +1,12 @@
 # java-find
-Unix find implemented in Java. Vintage code from 2004
+
+> Unix find implemented in Java. Vintage code from 2004
 
 This is a Java version of the Unix find utility. This class extends and
 enhances <code>java.io.File</code>. The <code>File</code> class has a method
-named <b>list() </b> that returns all files in the represented directory.
-This <code>Find</code> class adds the methods <b>listRecursively() </b> and
-<b>listFilesRecursively() </b> that search subdirectories, too.
+named `list()` that returns all files in the represented directory.
+This `Find` class adds the methods `listRecursively()` and
+`listFilesRecursively()` that search subdirectories, too.
 <p>
 
 A cool feature of this class is that it will auto-detect if it's being used
