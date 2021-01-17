@@ -21,7 +21,7 @@ This class also adds the useful method [isSymLink](https://github.com/dogweather
 to the File class.
 
 Java-Find's behavior can be configured like
-[the GNU find(1)](https://leemendelowitz.github.io/blog/gnu-find.html)
+[the GNU find](https://leemendelowitz.github.io/blog/gnu-find.html)
 program; for example, to return only a certain file type, or to descend
 only to a certain maximum depth.
 
@@ -63,14 +63,14 @@ find /usr/local/java \.java$
 You can see what JavaFind is doing behind the scenes
 by configuring either of these system properties:
 
-<ul>
-<li>`javafind.debug`: If set to any value, some debug info is printed
+`javafind.debug`: If set to any value, some debug info is printed
 to standard output, basically reporting on dynamic behavior (whether GNU
 optimization is being done, etc.).
-<li>`javafind.allowoptimize`: Can be set to "on" or "off", or "regex",
+
+`javafind.allowoptimize`: Can be set to "on" or "off", or "regex",
 performing the same function as the setOptimizeMode() method. As described
 above, "regex" is the default.
-</ul>
+
 
 
 ## Todo
