@@ -3,10 +3,12 @@
 > Unix [find](https://leemendelowitz.github.io/blog/gnu-find.html) implemented in Java. Vintage code from 2004
 
 This is a Java version of the Unix find utility. This class extends 
-`java.io.File`. The `File` class has a method
+`java.io.File`. The Java `File` class has a method
 named `list()` that returns all files in the represented directory.
-`Find` adds the methods `listRecursively()` and
-`listFilesRecursively()` that search subdirectories, too.
+`Find` adds two methods:
+
+* `listRecursively()`
+* `listFilesRecursively()`
 
 A cool feature of this class is that it will auto-detect if it's being used
 on a GNU system like FreeBSD or Linux, and if so will optimize file searches
