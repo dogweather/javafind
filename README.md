@@ -1,6 +1,6 @@
 # java-find
 
-> Unix find implemented in Java. Vintage code from 2004
+> Unix [find](https://leemendelowitz.github.io/blog/gnu-find.html) implemented in Java. Vintage code from 2004
 
 This is a Java version of the Unix find utility. This class extends 
 `java.io.File`. The `File` class has a method
