@@ -58,16 +58,16 @@ find /usr/local/java \.java$
 ```
 
 
-## Debugging info
+## Debugging Output
 
 You can see what JavaFind is doing behind the scenes
 by configuring either of these system properties:
 
-`javafind.debug`: If set to any value, some debug info is printed
+`javafind.debug` If set to any value, some debug info is printed
 to standard output, basically reporting on dynamic behavior (whether GNU
 optimization is being done, etc.).
 
-`javafind.allowoptimize`: Can be set to "on" or "off", or "regex",
+`javafind.allowoptimize` Can be set to "on" or "off", or "regex",
 performing the same function as the setOptimizeMode() method. As described
 above, "regex" is the default.
 
