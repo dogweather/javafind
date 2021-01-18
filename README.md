@@ -6,8 +6,8 @@ This is a Java version of the Unix find utility. This class extends
 `java.io.File` whose `list()` method that returns all files in a directory.
 `Find` adds two more:
 
-* `listRecursively()`
-* `listFilesRecursively()`
+* [listRecursively()](https://github.com/dogweather/javafind/blob/main/src/com/greenfabric/find/Find.java#L522-L536)
+* [listFilesRecursively()](https://github.com/dogweather/javafind/blob/main/src/com/greenfabric/find/Find.java#L498-L520)
 
 A cool feature of this class is that it will auto-detect if it's being used
 on a GNU system like FreeBSD or Linux, and if so will optimize file searches
