@@ -26,7 +26,7 @@ program; for example, to return only a certain file type, or to descend
 only to a certain maximum depth.
 
 
-## Example of embedded usage
+## Example of programmatic usage
 
 This code finds all html files in the given directory or sub-directory. Note
 that with the supplied regular expression, this will work whether the files
@@ -42,19 +42,19 @@ File[] files = myFind.listFilesRecursively();
 ```
 
 
-## Command-line usage syntax
-
-```
-java com.greenfabric.find.Find [Pathname [RegularExpression]]
-```
-
-
-## Example of Unix command-line usage
+## Example of command-line usage
 
 (On Windows, I set an alias to 'java com...')
 
 ```
 find /usr/local/java \.java$
+```
+
+
+## Command-line usage syntax
+
+```
+java com.greenfabric.find.Find [Pathname [RegularExpression]]
 ```
 
 
